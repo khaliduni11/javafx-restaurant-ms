@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.CreateUser">
+   <children>
+      <Label alignment="CENTER" layoutX="141.0" layoutY="22.0" prefHeight="42.0" prefWidth="337.0" text="Create new User">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="127.0" layoutY="94.0" prefHeight="35.0" prefWidth="384.0" promptText="Enter name">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="username" layoutX="127.0" layoutY="138.0" prefHeight="35.0" prefWidth="384.0" promptText="username">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="placeOfBirth" layoutX="127.0" layoutY="228.0" prefHeight="35.0" prefWidth="384.0" promptText="place of birth">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="127.0" layoutY="185.0" prefHeight="35.0" prefWidth="384.0" promptText="Enter password">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </PasswordField>
+      <DatePicker fx:id="dateOfBirth" editable="false" layoutX="127.0" layoutY="273.0" prefHeight="35.0" prefWidth="384.0" promptText="Enter birth date" />
+      <DatePicker fx:id="dateOfJoin" editable="false" layoutX="127.0" layoutY="318.0" prefHeight="35.0" prefWidth="384.0" promptText="Enter join date" />
+      <Button layoutX="127.0" layoutY="457.0" mnemonicParsing="false" onAction="#createUser" prefHeight="35.0" prefWidth="161.0" text="Create User">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancel" layoutX="350.0" layoutY="457.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="161.0" text="Cancel">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="secQ" layoutX="127.0" layoutY="364.0" prefHeight="35.0" prefWidth="384.0" promptText="Enter Secret Question">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="secA" layoutX="127.0" layoutY="409.0" prefHeight="35.0" prefWidth="384.0" promptText="Enter Secret Answer">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+   </children>
+</Pane>

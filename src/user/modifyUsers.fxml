@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="modifyUsers" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.ModifyUsers">
+   <children>
+      <Label alignment="CENTER" layoutX="79.0" layoutY="29.0" prefHeight="30.0" prefWidth="403.0" text="Modify User">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="107.0" layoutY="78.0" prefHeight="30.0" prefWidth="386.0" promptText="Enter name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="username" layoutX="107.0" layoutY="114.0" prefHeight="30.0" prefWidth="386.0" promptText="Enter username">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="placeOfBirth" layoutX="107.0" layoutY="194.0" prefHeight="30.0" prefWidth="386.0" promptText="Enter place of birth">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="107.0" layoutY="154.0" prefHeight="30.0" prefWidth="386.0" promptText="Enter password">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </PasswordField>
+      <DatePicker fx:id="dateOfBirth" editable="false" layoutX="107.0" layoutY="232.0" prefHeight="25.0" prefWidth="386.0" promptText="Enter date of birth" />
+      <DatePicker fx:id="dateOfJoin" editable="false" layoutX="107.0" layoutY="267.0" prefHeight="25.0" prefWidth="386.0" promptText="Enter date of join" />
+      <TextField fx:id="secA" layoutX="107.0" layoutY="335.0" prefHeight="30.0" prefWidth="386.0" promptText="Enter Secret Answer">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="secQ" layoutX="107.0" layoutY="299.0" prefHeight="30.0" prefWidth="386.0" promptText="Enter secret Question">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <Button layoutX="107.0" layoutY="377.0" mnemonicParsing="false" onAction="#update" prefHeight="30.0" prefWidth="120.0" text="Update">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="240.0" layoutY="377.0" mnemonicParsing="false" onAction="#delete" prefHeight="30.0" prefWidth="120.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="373.0" layoutY="377.0" mnemonicParsing="false" onAction="#cancel" prefHeight="30.0" prefWidth="120.0" text="Cancel">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

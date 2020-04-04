@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="displayReservations" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reservations.DisplayReservations">
+   <children>
+      <TextField fx:id="searchItem" alignment="CENTER" focusTraversable="false" onKeyTyped="#search" promptText="Search" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="10.0" left="100.0" right="100.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tableView" onMouseClicked="#modifyReservation" prefHeight="200.0" prefWidth="200.0" style="-fx-font-size: 16;" VBox.vgrow="ALWAYS">
+        <columns>
+          <TableColumn fx:id="id_col" maxWidth="90.0" minWidth="90.0" prefWidth="90.0" resizable="false" text="ID" />
+          <TableColumn fx:id="name_col" minWidth="350.0" prefWidth="350.0" text="Name" />
+            <TableColumn fx:id="start_col" maxWidth="90.0" minWidth="90.0" prefWidth="90.0" text="Start Time" />
+            <TableColumn fx:id="end_col" maxWidth="90.0" minWidth="90.0" prefWidth="90.0" text="End Time" />
+            <TableColumn fx:id="date_col" maxWidth="90.0" minWidth="90.0" prefWidth="90.0" text="Date" />
+            <TableColumn fx:id="price_col" maxWidth="90.0" minWidth="90.0" prefWidth="90.0" text="price" />
+            <TableColumn fx:id="type_col" minWidth="200.0" prefWidth="200.0" text="type" />
+            <TableColumn fx:id="contact_col" minWidth="150.0" prefWidth="150.0" text="Contact" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

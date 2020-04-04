@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="displayUsers" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.DisplayUsers">
+   <children>
+      <TextField fx:id="searchItem" alignment="CENTER" focusTraversable="false" onKeyTyped="#search" promptText="Search" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="10.0" left="100.0" right="100.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tableView" onMouseClicked="#modifyTableItem" prefHeight="448.0" prefWidth="752.0" style="-fx-font-size: 15;" VBox.vgrow="ALWAYS">
+        <columns>
+          <TableColumn fx:id="id_col" maxWidth="90.0" minWidth="90.0" prefWidth="90.0" text="ID" />
+          <TableColumn fx:id="name_col" maxWidth="350.0" minWidth="350.0" prefWidth="350.0" text="Name" />
+            <TableColumn fx:id="username_col" minWidth="150.0" prefWidth="150.0" text="UserName" />
+            <TableColumn fx:id="password_col" minWidth="100.0" prefWidth="100.0" text="Password" />
+            <TableColumn fx:id="placeOfBirth_col" maxWidth="120.0" minWidth="120.0" prefWidth="120.0" text="place of birth" />
+            <TableColumn fx:id="dateOfBirth_col" maxWidth="120.0" minWidth="120.0" prefWidth="120.0" text="Date of birth" />
+            <TableColumn fx:id="dateOfJoin_col" maxWidth="120.0" minWidth="120.0" prefWidth="120.0" text="Date of Join" />
+            <TableColumn fx:id="secQ_col" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Secret Question" />
+            <TableColumn fx:id="secA_col" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Secreat Answser" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

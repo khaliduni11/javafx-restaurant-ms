@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="tableSearch" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="129.0" prefWidth="600.0" style="-fx-background-color: #F8EFBA;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="orders.GetTable">
+   <children>
+      <Label layoutX="48.0" layoutY="38.0" prefHeight="33.0" prefWidth="74.0" text="TableNo:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="147.0" layoutY="82.0" mnemonicParsing="false" onAction="#search" prefHeight="33.0" prefWidth="122.0" style="-fx-background-color: #5f27cd;" text="Search" textFill="#fad390">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tableNo" layoutX="147.0" layoutY="42.0" prefHeight="33.0" prefWidth="330.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <Button layoutX="347.0" layoutY="82.0" mnemonicParsing="false" onAction="#cancel" prefHeight="33.0" prefWidth="130.0" style="-fx-background-color: #ee5253;" text="Cancel" textFill="#fad390">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

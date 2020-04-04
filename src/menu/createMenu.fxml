@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="createMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="417.0" prefWidth="757.0" style="-fx-background-color: #ffeaa7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.MenuController">
+   <children>
+      <TextField fx:id="name" layoutX="179.0" layoutY="132.0" prefHeight="31.0" prefWidth="355.0" promptText="Enter name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="179.0" layoutY="27.0" prefHeight="38.0" prefWidth="355.0" text="Create Menu">
+         <font>
+            <Font name="Arial Bold Italic" size="34.0" />
+         </font>
+      </Label>
+      <TextField fx:id="price" layoutX="179.0" layoutY="170.0" prefHeight="31.0" prefWidth="355.0" promptText="Enter price">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="type" layoutX="179.0" layoutY="255.0" prefHeight="31.0" prefWidth="355.0" promptText="Choose the special time" style="-fx-font-size: 14; -fx-font-family: bold;" />
+      <Button layoutX="179.0" layoutY="303.0" mnemonicParsing="false" onAction="#addMenu" prefHeight="31.0" prefWidth="143.0" style="-fx-background-color: #6c5ce7;" text="Add Menu" textFill="#dff9fb">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="391.0" layoutY="303.0" mnemonicParsing="false" onAction="#closeCreateMenu" prefHeight="31.0" prefWidth="143.0" style="-fx-background-color: #d63031;" text="Cancel" textFill="#dff9fb">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="showImage" fitHeight="199.0" fitWidth="196.0" layoutX="552.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="179.0" layoutY="209.0" mnemonicParsing="false" onAction="#browseImage" prefHeight="31.0" prefWidth="355.0" text="Choose The image of the item">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="displayEmployee" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employees.DisplayEmployees">
+   <children>
+      <TextField fx:id="searchItem" alignment="CENTER" focusTraversable="false" onKeyTyped="#search" prefHeight="0.0" prefWidth="574.0" promptText="Search " VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="10.0" left="100.0" right="100.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></TextField>
+
+      <TableView fx:id="tableView" onMouseClicked="#modifyEmployee" prefHeight="483.0" prefWidth="774.0" style="-fx-font-size: 15;" VBox.vgrow="ALWAYS">
+        <columns>
+          <TableColumn fx:id="id_col" maxWidth="80.0" minWidth="80.0" resizable="false" text="ID" />
+          <TableColumn fx:id="name_col" editable="false" minWidth="350.0" prefWidth="350.0" text="Name" />
+            <TableColumn fx:id="dateOfBirth_col" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="DateOfBirth" />
+            <TableColumn fx:id="placeOfBirth_col" minWidth="140.0" prefWidth="140.0" text="PlaceOfBirth" />
+            <TableColumn fx:id="gender_col" maxWidth="80.0" minWidth="80.0" resizable="false" text="Gender" />
+            <TableColumn fx:id="address_col" minWidth="140.0" prefWidth="140.0" text="Address" />
+            <TableColumn fx:id="contact_col" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Contact" />
+            <TableColumn fx:id="wage_col" maxWidth="80.0" minWidth="80.0" resizable="false" text="wage" />
+            <TableColumn fx:id="role_col" minWidth="100.0" prefWidth="100.0" resizable="false" text="role" />
+            <TableColumn fx:id="specialization_col" maxWidth="130.0" minWidth="130.0" prefWidth="130.0" text="specialization" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

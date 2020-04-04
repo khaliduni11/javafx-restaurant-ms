@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="loginMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="354.0" prefWidth="749.0" style="-fx-background-color: #e74c3c;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="userName" layoutX="356.0" layoutY="150.0" prefHeight="35.0" prefWidth="364.0" promptText="Enter  your username">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <PasswordField fx:id="password" layoutX="356.0" layoutY="198.0" prefHeight="35.0" prefWidth="364.0" promptText="Enter your password">
+         <font>
+            <Font size="18.0" />
+         </font></PasswordField>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="389.0" layoutY="14.0" prefHeight="52.0" prefWidth="278.0" text="Login Form" textAlignment="RIGHT" textFill="#fdcb6e">
+         <font>
+            <Font name="Arial Bold Italic" size="39.0" />
+         </font>
+      </Label>
+      <Button layoutX="356.0" layoutY="254.0" mnemonicParsing="false" onAction="#login" prefHeight="35.0" prefWidth="106.0" style="-fx-background-color: #3498db;" text="Login">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="473.0" layoutY="254.0" mnemonicParsing="false" onAction="#forgetPassword" prefHeight="35.0" prefWidth="131.0" style="-fx-background-color: #f1c40f;" text="Forget Password">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="614.0" layoutY="254.0" mnemonicParsing="false" onAction="#closeLogin" prefHeight="35.0" prefWidth="106.0" style="-fx-background-color: #e67e22;" text="Cancel">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="354.0" fitWidth="339.0" layoutX="-2.0" layoutY="-3.0" opacity="0.68" pickOnBounds="true">
+         <image>
+            <Image url="@../images/LoginImage.jpeg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="-2.0" layoutY="150.0" prefHeight="69.0" prefWidth="339.0" text="Welcome to Restaurent" textFill="#f8efba">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

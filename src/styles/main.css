@@ -1,0 +1,35 @@
+.homePage-background {
+    -fx-background-image: url("../images/homepage3.jpeg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-color: black;
+}
+
+.createEmployee-background {
+    -fx-background-image: url("../images/waiter1.jpeg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+}
+
+.modifyEmployee-background {
+    -fx-background-image: url("../images/waiter2.jpeg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+}
+
+.createReservation-background {
+    -fx-background-image: url("../images/reservation.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+}
+
+.modifyReservation-background {
+    -fx-background-image: url("../images/reservation1.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+}
+
+.menuTable{
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+}

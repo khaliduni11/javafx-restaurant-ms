@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="createEmployee" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="600.0" styleClass="createEmployee-background" stylesheets="@../styles/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employees.CreateEmployee">
+   <children>
+      <Label alignment="CENTER" layoutX="141.0" layoutY="22.0" prefHeight="29.0" prefWidth="291.0" text="Add new Employee" textFill="#f1c40f">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="129.0" layoutY="78.0" prefHeight="29.0" prefWidth="364.0" promptText="Enter name">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="wage" layoutX="129.0" layoutY="313.0" prefHeight="29.0" prefWidth="364.0" promptText="wage">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="placeOfBirth" layoutX="129.0" layoutY="151.0" prefHeight="29.0" prefWidth="364.0" promptText="place of birth">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="specialization" layoutX="129.0" layoutY="391.0" prefHeight="29.0" prefWidth="364.0" promptText="specialiation">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="address" layoutX="129.0" layoutY="231.0" prefHeight="29.0" prefWidth="364.0" promptText="Address">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="contact" layoutX="129.0" layoutY="271.0" prefHeight="29.0" prefWidth="364.0" promptText="phone number">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="dateOfBirth" editable="false" layoutX="129.0" layoutY="118.0" prefHeight="25.0" prefWidth="364.0" promptText="Enter date of birth" />
+      <ComboBox fx:id="gender" layoutX="129.0" layoutY="193.0" prefHeight="25.0" prefWidth="364.0" promptText="gender" />
+      <ComboBox fx:id="role" layoutX="129.0" layoutY="354.0" prefHeight="25.0" prefWidth="364.0" promptText="role" />
+      <Button layoutX="129.0" layoutY="442.0" mnemonicParsing="false" onAction="#createEmployee" prefHeight="35.0" prefWidth="162.0" style="-fx-background-color: #5f27cd;" text="Add" textFill="#feca57">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="331.0" layoutY="442.0" mnemonicParsing="false" onAction="#cancel" prefHeight="35.0" prefWidth="162.0" style="-fx-background-color: #ee5253;" text="Cancel" textFill="#7bed9f">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

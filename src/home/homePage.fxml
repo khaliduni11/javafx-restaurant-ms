@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="homePageMenu" prefHeight="509.0" prefWidth="600.0" style="-fx-font-size: 15; -fx-background-color: #34495e;" styleClass="homePage-background" stylesheets="@../styles/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.HomeController">
+   <top>
+      <MenuBar prefHeight="36.0" prefWidth="598.0" BorderPane.alignment="TOP_LEFT">
+        <menus>
+          <Menu mnemonicParsing="false" style="-fx-font-size: 16; -fx-font-family: bold;" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#changePassword" style="-fx-font-size: 15;" text="Change Password" />
+                  <MenuItem mnemonicParsing="false" onAction="#exit" style="-fx-font-size: 15;" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" style="-fx-font-size: 16; -fx-font-family: bold;" text="Menu">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#breakfast" text="Breakfast" />
+                  <MenuItem mnemonicParsing="false" onAction="#lunch" text="Lunch" />
+                  <MenuItem mnemonicParsing="false" onAction="#dinner" text="Dinner" />
+                  <MenuItem mnemonicParsing="false" onAction="#seafood" text="SeaFood" />
+                  <MenuItem mnemonicParsing="false" onAction="#drink" text="Drinks" />
+                  <MenuItem mnemonicParsing="false" onAction="#takeAway" text="Take away" />
+                  <MenuItem mnemonicParsing="false" onAction="#desserts" text="Desserts" />
+                  <MenuItem mnemonicParsing="false" onAction="#allMenus" text="All Menus" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" style="-fx-font-size: 16;" text="Registeration">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#registerUser" style="-fx-font-size: 15;" text="User" />
+                  <MenuItem mnemonicParsing="false" onAction="#createEmployee" style="-fx-font-size: 15;" text="Employee" />
+                  <MenuItem mnemonicParsing="false" onAction="#createReservations" style="-fx-font-size: 15;" text="Reservation" />
+                  <MenuItem mnemonicParsing="false" onAction="#createMenu" style="-fx-font-size: 15;" text="Menu" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" style="-fx-font-size: 16;" text="View/Edit">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#displayUsers" style="-fx-font-size: 15;" text="Users" />
+                  <MenuItem mnemonicParsing="false" onAction="#displayEmployees" style="-fx-font-size: 15;" text="Employee" />
+                  <MenuItem mnemonicParsing="false" onAction="#displayReservations" style="-fx-font-size: 15;" text="Reservation" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Order">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#createOrder" text="Order Now" />
+                  <MenuItem mnemonicParsing="false" onAction="#getTableOrder" text="Order List" />
+              </items>
+            </Menu>
+        </menus>
+         <opaqueInsets>
+            <Insets right="100.0" />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </MenuBar>
+   </top>
+</BorderPane>
